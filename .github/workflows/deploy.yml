@@ -32,4 +32,8 @@ jobs:
         with:
           path: dist
       - id: deployment
+<<<<<<< HEAD
         uses: actions/deploy-pages@v4
+=======
+        uses: actions/deploy-pages@v4
+>>>>>>> 3c51824 (add GitHub Actions workflow for building and deploying portfolio)
