@@ -29,6 +29,12 @@ The production site is written to `dist/`. `npm run preview` serves that build l
 
 Import the project into Vercel or run `vercel` from the project directory. The checked-in `vercel.json` configures the Vite build command and `dist` output directory. No environment variables or backend services are required.
 
+## Deploy to GitHub Pages
+
+The `main` branch is built and deployed automatically by `.github/workflows/deploy.yml`. Pull requests to `main` run the production build without publishing it. The Vite base path is configured for the `Portfolio` repository, so the site is published at `https://jaberkhan011.github.io/Portfolio/`.
+
+In the repository settings, choose **Pages → Build and deployment → GitHub Actions** as the publishing source.
+
 ## Content and assets
 
 - Update portfolio information in `src/data/portfolio.ts`.
